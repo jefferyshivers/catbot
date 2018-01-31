@@ -3,7 +3,7 @@
 const access_key_id = process.env.AWS_access_key_id;
 const secret_access_key = process.env.AWS_secret_access_key;
 
-var AWS = require("aws-sdk");
+const AWS = require("aws-sdk");
 const awsRegion = "us-east-1";
 AWS.config.update({
   accessKeyId: access_key_id,
@@ -22,9 +22,9 @@ const params = {
 module.exports = function (Utterance) {
   Utterance.firstOpen = cb => {
     // create a unique sessionid to keep track of the session
-    const sessionid = crypto.randomBytes(20).toString("hex");
+    let sessionid = crypto.randomBytes(20).toString("hex");
     let response = { message: "Hi there. Say something a cat might say!" }
-    cb(null, sessionid, response)
+    cb(null, sessionid, response);
   };
 
   Utterance.remoteMethod("firstOpen", {
