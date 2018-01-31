@@ -31,4 +31,4 @@ Your bot should be up and running at localhost:3000.
 
 ## How it was made
 
-View the article where I go through the whole process of building this chatbot on Medium.
+View the article where I go through the whole process of building this chatbot on [Medium](https://medium.com/@jefferyshivers/create-a-chatbot-with-amazon-lex-loopback-and-react-5d034792b8d).
