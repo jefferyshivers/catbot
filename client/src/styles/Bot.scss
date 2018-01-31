@@ -1,0 +1,78 @@
+.App .Bot {
+  position: relative;
+  float: left;
+  width: calc(100vw - 20px);
+  max-width: 500px;
+  height: calc(100vh - 20px);
+  max-height: 600px;
+  background: white;
+  border-radius: 3px;
+
+  > .messages {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    max-height: calc(100% - 60px);
+    overflow: scroll;
+
+    > .messages-inner {
+      position: relative;
+      height: auto;
+      float: bottom;
+      min-height: 100%;
+      margin: 0 auto;
+      width: calc(100% - 20px);
+
+      > .message {
+        font-family: sans-serif;
+        position: relative;
+        float: bottom;
+        width: calc(100% - 140px);
+        min-height: 50px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        line-height: 1.6em;
+        font-size: 1.6em;
+        border-radius: 8px;
+        background: rgb(233, 233, 226);
+  
+        &.BOT {
+          color: rgb(12, 58, 88);
+          float: left;
+        }
+  
+        &.USER {
+          color: rgb(61, 119, 95);
+          float: right;
+        }
+      }
+    }
+  }
+
+  > .input-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+
+    > input {
+      height: calc(100% - 20px);
+      width: calc(100% - 30px);
+      background: rgb(236, 236, 236);
+      font-size: 14pt;
+      border: none;
+      &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+        background: white;
+      }
+      padding: 0 10px;
+    }
+  }
+}

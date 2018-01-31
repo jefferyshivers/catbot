@@ -1,0 +1,26 @@
+{
+  "name": "utterance",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "message": {
+      "type": "string",
+      "required": false
+    },
+    "sessionid": {
+      "type": "string",
+      "required": false
+    },
+    "author": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
